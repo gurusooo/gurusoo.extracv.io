@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #CD97B6;
+    color: #7C759F;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7C759F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #064B52;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+aside {
+    width: 250px;
+    background-color: #7C759F;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #064B52;
+    flex-shrink: 0;
+}
+
+article {
+    background-color: #7C759F;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #064B52;
+    flex: 1;
+    min-width: 300px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #CD97B6;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: background-size 0.3s ease-in-out;
+    background-image: linear-gradient(to right, #DFABC4, #DFABC4);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+a:hover {
+    background-size: 100% 2px;
+    color: #DFABC4;
+}
+
+footer {
+    background-color: #7C759F;
+    color: white;
+    border: 2px solid #064B52;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #CD97B6;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    article {
+        width: 100%;
+        padding: 15px;
+    }
+
+    img {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #DFABC4;
+    }
+
+    section {
+        width: 80%;
+        margin: 20px auto;
+    }
+}
+
+section:hover {
+    background-color: #7C759F;
+    transition: 0.3s ease;
+}
